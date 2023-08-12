@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+nav.navbar {
+  background-color: transparent !important;
+}
+
+.navbar .nav-link {
+  color:#03ADFF !important;
+  font-size:25px;
+  font-weight: 700;
+}
+.navbar .nav-link:hover {
+  color:white !important;
+
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: auto;
+}
+
+.form-control{
+  font-size: 50px;
+}
+
+.btn-outline-success,.dropdown-item:hover{
+  background-color:#F39D2F !important; 
+  border-color: white;
+}
+
+.btn-outline-success{
+  color: white !important;
+  border-color: white !important;
+  width: 150px !important;
+}
+.navbar-nav .dropdown-menu{
+  margin-left: 8% !important;
+  margin-top: 2% !important;
+  background-color: #F39D2F !important;
+}
+
+.navbar-nav .dropdown-menu:hover{
+  background-color: #e2c093 !important;
+  color: white !important;
+  border-color:transparent;
+
+}
+.dropdown-item{
+  color: #ffffff !important;
+}
+ .nav-link:hover{
+  border: 0px solid transparent !important;
+  background-color: #F39D2F;
+}
+
+.navbar-toggler-icon{
+  background-color: white !important;
+
+}
+.navbar-toggler{
+margin-top: -10%;
+}

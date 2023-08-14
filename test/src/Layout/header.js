@@ -21,8 +21,8 @@ const Header = () =>{
             <Nav.Link href="/About">About</Nav.Link>
             <Nav.Link href="/Contact">Contact Us</Nav.Link>
             <NavDropdown title="Login" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">Admin Login &#9094;</NavDropdown.Item>
-              <NavDropdown.Item href="#">User Login &#9094;</NavDropdown.Item>
+              <NavDropdown.Item href="/AdminLogin">Admin Login &#9094;</NavDropdown.Item>
+              <NavDropdown.Item href="UserLogin">User Login &#9094;</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <form className="d-flex" role="search">

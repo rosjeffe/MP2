@@ -5,7 +5,7 @@ import Footer from "../Layout/footer";
 const HomePage = () =>{
     return(
       <div>
-<Header></Header>
+<Header />
 <Content />
 <Footer />
       </div>

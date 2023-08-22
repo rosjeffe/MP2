@@ -69,11 +69,20 @@ nav.navbar {
 }
 
 .navbar-toggler-icon{
-  background-color: white !important;
-
+  background-color: grey !important;
+  width: 80%;
 }
 .navbar-toggler{
 margin-top: -10%;
+}
+
+.navbar-toggler.collapsed{
+  background-color: blue;
+  width: 80%;
+}
+
+.me-auto.navbar-nav{
+  background-color: #ffffff;
 }
 
 /* Admin/User Login CSS */
@@ -105,9 +114,9 @@ margin-top: -10%;
 
 .SocIcon {
   align-items: center;
-  width: 25px !important;
-  height: 25px;
-  margin: 5px;
+  width: 35px  !important;
+  height: 35px ;
+  margin: 5px ;
   
 }
   .SocIcon:hover {
@@ -178,6 +187,9 @@ margin-top: -10%;
   }
   .socSignin{
     text-align: center;
+    margin-top: 15px;
+    text-size-adjust: 80%;
+    
   }
   /*Kusina home Page Carosel   */
 
@@ -209,7 +221,36 @@ box-shadow: -1px 1px 17px -1px rgba(243,157,47,1);
   .center-align .ratio {
     text-align: center;
   }
-  .card:hover{
+  /* .card:hover{
     transform: translateY(-20px);
     transition: transform 0.3s;
+  } */
+
+  #headerContainer {
+  min-width: 100%;
+  background-color: #831313; /* comment out after testing */
+
   }
+
+ #headerLogo {
+  margin-bottom: 1%;
+  margin-top: 1%;
+ }
+
+
+.navLinks{
+  font-size: 80%;
+  background-color: #F39D2F;
+}
+
+#dropDown{
+  background-color: #F39D2F;
+  text-align: center !important;
+  margin-left: 0%;
+  width: 100%;
+}
+
+#navbarSupportedContent{
+  border: 10px;
+  border-color: green;
+}

@@ -31,9 +31,9 @@ const UserLogin = () => {
             <button type="button" className="LoginBtn">Login</button>
           </a>
           <div>
-            <a href="signup.html">
+            <label htmlFor="Signup.js">
               <button type="button" className="LoginBtn">Sign Up</button>
-            </a>
+            </label>
           </div>
         </div>
       </div>

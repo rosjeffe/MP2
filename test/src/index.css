@@ -193,23 +193,30 @@ margin-top: -10%;
   }
   /*Kusina home Page Carosel   */
 
-  /* div.Caros{
-    
-    -webkit-box-shadow: -1px 1px 17px -1px rgba(243,157,47,1);
--moz-box-shadow: -1px 1px 17px -1px rgba(243,157,47,1);
-box-shadow: -1px 1px 17px -1px rgba(243,157,47,1);
+ 
+  div.Carding{
+    background-image: url(./Images/restoOpacity.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+  }
 
-  } */
-  div.Caros{
-    background-image: URL(./Images/backgroundSteak-modified1120x315.jpg);
+
+  
+
+  div.Caros {
+    background-color: transparent;
+    -webkit-box-shadow: -1px 1px 17px -1px rgba(243, 157, 47, 1);
+    -moz-box-shadow: -1px 1px 17px -1px rgba(243, 157, 47, 1);
+    box-shadow: -1px 1px 17px -1px rgba(243, 157, 47, 1);
+    background-image: url(./Images/backgroundSteak-modified.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: transparent !important;
   }
 
   .card img,.card-body{
-    background-color: transparent !important;
+    background-color: rgb(255, 226, 189)!important;
     border: 1px  white;
     
   }
@@ -228,7 +235,7 @@ box-shadow: -1px 1px 17px -1px rgba(243,157,47,1);
 
   #headerContainer {
   min-width: 100%;
-  background-color: #831313; /* comment out after testing */
+  background-color: transparent; /* comment out after testing */
 
   }
 
@@ -253,4 +260,53 @@ box-shadow: -1px 1px 17px -1px rgba(243,157,47,1);
 #navbarSupportedContent{
   border: 10px;
   border-color: green;
+}
+
+
+/* About us CSS */
+
+.AboutUsBackground{
+  background-image: url(./Images/table.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.Aboutus p{
+  margin-top: -36%;
+  margin-left: 100px;
+  width: 400px;
+}
+
+#carouselExampleCaptions {
+  max-width: 500px; 
+  margin:  auto; 
+}
+
+.carousel-item img {
+  max-width: 75%;
+  height: auto; 
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+/* Contact Us CSS */
+
+
+.ContactUsIcon{
+  width: 55px;
+  margin-left: 15px;
+  margin-top: 20%;
+}
+.ContactUsIcon:hover{
+transform: translateY(-20px);
+transition: transform 0.3s;
+}
+
+div.contactUsReachUs {
+  color: #e2c093 !important;
+  text-align: center;
+  font-weight: 900px;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }

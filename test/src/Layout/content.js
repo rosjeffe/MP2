@@ -13,7 +13,7 @@ const Content =() =>{
             <div className="col-sm-3 mb-3 mb-sm-0">
               <div className="card" style={{ width: '18rem' }}>
               <img src={img1} className="card-img-top" alt="..." />
-                <div className="card-body">
+                <div className="card-body cards" >
                   <h5 className="card-title">New Coffee Shop</h5>
                   <p className="card-text">So"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
                   <a href="#" className="btn btn-primary">Visit Store</a>

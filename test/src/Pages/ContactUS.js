@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Layout/header";
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 // import Content from "../layout/content";
 import Footer from "../Layout/footer";
 import img1 from "../Images/fb.png";
@@ -13,18 +14,26 @@ const Contact = () =>{
       <div>
 <Header></Header>
 
-
+<div className="ContactUs">
 
       <Form style={{ maxWidth: '50%' }}>
-            <Form.Group className="mb-6" controlId="exampleForm.ControlInput1">
-            <Form.Label>Email </Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" />
+            <Form.Group className="mb-6" controlId="exampleForm.ControlInput1" >
+            <Form.Label >Email </Form.Label>
+            <Form.Control type="email" placeholder="name@example.com" style={{color:'white'}}/>
             </Form.Group>
-            <Form.Group className="mb-6" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={5} />
+            <Form.Group className="mb-6" controlId="exampleForm.ControlTextarea1"  >
+            <Form.Label >Message</Form.Label>
+            <Form.Control as="textarea"  style={{color:'white'}} rows={5} />
             </Form.Group>
     </Form>
+<div className="contactSubmit">
+    <div className="mb-3 ">
+    <Button variant="primary " type="submit">
+              Send
+              </Button>
+    </div> 
+    
+    </div>
 
     <div className="mb-3">
       <div className="contactUsReachUs"> Or Reach us in Our Social Media Platforms</div>
@@ -38,6 +47,7 @@ const Contact = () =>{
       <a href="https://www.linkedin.com/feed/"><img className="ContactUsIcon" src={img4} alt="LinkedIn" /></a>
     </div>
 
+    </div>
 <Footer />
       </div>
       

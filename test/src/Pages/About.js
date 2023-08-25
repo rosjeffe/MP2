@@ -3,7 +3,7 @@ import Header from "../Layout/header";
 import Carousel from 'react-bootstrap/Carousel';
 import Footer from "../Layout/footer";
 import img1 from "../Images/vy (2).jpg";
-import img2 from "../Images/burg.jpg";
+import img2 from "../Images/Burger.jpg";
 import img3 from "../Images/Angels.jpg";
 import img4 from "../Images/BackMot.png";
 

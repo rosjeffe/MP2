@@ -215,11 +215,24 @@ margin-top: -10%;
     background-size: cover;
   }
 
-  .card img,.card-body{
-    background-color: rgb(255, 226, 189)!important;
-    border: 1px  white;
+  .card img{
+    Background: transparent;
+    border: 1px  white !important;
+    
+    
     
   }
+
+  .card{
+    background-color:transparent !important;
+
+  }
+
+  .card:hover{
+    transform: translateY(-20px);
+    transition: transform 0.3s;
+  }
+
   .center-align {
     display: flex;
     justify-content: center;
@@ -283,7 +296,7 @@ margin-top: -10%;
 }
 
 .carousel-item img {
-  max-width: 75%;
+  max-width: 100%;
   height: auto; 
   border-radius: 15px;
   margin-top: 5%;
@@ -297,6 +310,7 @@ margin-top: -10%;
   width: 55px;
   margin-left: 15px;
   margin-top: 20%;
+  margin-bottom: 20%;
 }
 .ContactUsIcon:hover{
 transform: translateY(-20px);
@@ -310,3 +324,24 @@ div.contactUsReachUs {
   font-size: 30px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.ContactUs{
+  background-image: url(./Images/contactusbackground.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-control,.contactSubmit {
+  background-color: transparent !important;
+  border-color: #e2c093 !important;
+  
+}
+
+.form-label,#exampleFormControlInput1 {
+  color: white !important; 
+  width: 250px;
+}
+
+.contactSubmit{
+  margin-top: 1%;
+};

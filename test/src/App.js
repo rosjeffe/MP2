@@ -8,7 +8,8 @@ import Stores from './Pages/Stores';
 import AdminLogin from './Pages/AdminLogin';
 import UserLogin from './Pages/UserLogin';
 import Signup from './Pages/Signup';
-import KopikoStore from './Pages/KopikoStore';
+import KopikoStore from './Pages/KopikoStore'
+import KopikoStoreAdmin from './Pages/KopikoStoreAdmin'
 
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <Route path ="/AdminLogin" element = {<AdminLogin></AdminLogin>}></Route>
       <Route path ="/UserLogin" element = {<UserLogin></UserLogin>}></Route>
       <Route path ="/Signup" element = {<Signup></Signup>}></Route>
-      <Route path="/KopikoStore/:Pizza" element = {<KopikoStore></KopikoStore>}></Route>
+      <Route path="/KopikoStoreAdmin/:Pizza" element = {<KopikoStoreAdmin></KopikoStoreAdmin>}></Route>
+      <Route path="/KopikoStore/"element = {<KopikoStore></KopikoStore>}></Route>
     </Routes>
     
   );

@@ -3,7 +3,7 @@ import { Card, Button, Form, Table, InputGroup } from "react-bootstrap";
 import Header from "../Layout/header";
 import Footer from "../Layout/footer";
 
-function KopikoStoreAdmin() {
+function PizzaStoreAdmin() {
   const [cards, setCards] = useState([]);
   const [Price, setPrice] = useState("");
   const [subtitle, setSubtitle] = useState("");
@@ -66,7 +66,7 @@ function KopikoStoreAdmin() {
 
   return (
     <div>
-        <Header />
+      <Header />
       <Table bordered>
         <tbody>
           <tr>
@@ -149,4 +149,4 @@ function KopikoStoreAdmin() {
     </div>
   );
 }
-export default KopikoStoreAdmin;
+export default PizzaStoreAdmin;

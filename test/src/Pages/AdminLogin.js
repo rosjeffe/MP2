@@ -14,6 +14,7 @@ const AdminLogin = () => {
   const [Username, setUsername] = useState('');
   const [Password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const [isAdmin, setisAdmin] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -23,7 +24,7 @@ const AdminLogin = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ Username, Password }),
+      body: JSON.stringify({ Username, Password,isAdmin}),
     } );
 
     const data = await response.json();
@@ -31,12 +32,18 @@ const AdminLogin = () => {
     
     
     if (data.status === 'Success') {
-     navigate(`/KopikoStoreAdmin/${Username}`);
+      if (Username === 'Kopiko' ) {
+        navigate(`/KopikoStoreAdmin/${Username}`);
+      } else if (Username === 'Pizza') {
+        navigate(`/PizzaStoreAdmin/${Username}`);
+      } else {
+        setMessage('Invalid Username');
+      }
     } else {
       setMessage(data.status);
     }
-
-  }
+ 
+   }
 
 
 

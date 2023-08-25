@@ -228,7 +228,7 @@ margin-top: -10%;
 
   }
 
-  .card:hover{
+  .cards:hover{
     transform: translateY(-20px);
     transition: transform 0.3s;
   }
@@ -276,7 +276,7 @@ margin-top: -10%;
 }
 
 #navbarSupportedContent{
-background-color: #F39D2F;
+background-color: transparent;
 }
 
 
@@ -333,7 +333,7 @@ div.contactUsReachUs {
 #registration{
   background-color: red;
 }
-=======
+
 .ContactUs{
   background-image: url(./Images/contactusbackground.jpg) ;
     background-position: center;

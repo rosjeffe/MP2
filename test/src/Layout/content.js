@@ -15,7 +15,7 @@ const Content =() =>{
         <div className="col">
           <div className="row">
             <div className="col-sm-3 mb-3 mb-sm-0">
-              <div className="card" style={{ width: '18rem'}}>
+              <div className="cards" style={{ width: '18rem'}}>
               <img src={img1} className="card-img-top" alt="..." />
                 <div className="card-body" >
                   <h5 className="card-title">New Coffee Shop</h5>
@@ -26,7 +26,7 @@ const Content =() =>{
               </div>
             </div>
             <div className="col-sm-3 mb-3 mb-sm-0">
-              <div className="card" style={{ width: '18rem' }}>
+              <div className="cards" style={{ width: '18rem' }}>
                 <img src={img2} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">New Burger Shop</h5>
@@ -36,7 +36,7 @@ const Content =() =>{
               </div>
             </div> 
             <div className="col-sm-3 mb-3 mb-sm-0">
-              <div className="card" style={{ width: '18rem' }}>
+              <div className="cards" style={{ width: '18rem' }}>
               <img src={img3} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">New Pizza Shop</h5>
@@ -46,7 +46,7 @@ const Content =() =>{
               </div>
             </div>
             <div className="col-sm-3 mb-3 mb-sm-0">
-              <div className="card" style={{ width: '18rem' }}>
+              <div className="cards" style={{ width: '18rem' }}>
               <img src={img4} className="card-img-top" alt="..." />
                 <div className="card-body">
                   <h5 className="card-title">New Cake Shop</h5>

@@ -14,6 +14,7 @@ const AdminLogin = () => {
   const [Username, setUsername] = useState('');
   const [Password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const [isAdmin, setisAdmin] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
@@ -23,7 +24,7 @@ const AdminLogin = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ Username, Password }),
+      body: JSON.stringify({ Username, Password,isAdmin}),
     } );
 
     const data = await response.json();
@@ -31,12 +32,18 @@ const AdminLogin = () => {
     
     
     if (data.status === 'Success') {
-     navigate(`/KopikoStore/${Username}`);
+      if (Username === 'Kopiko' ) {
+        navigate(`/KopikoStoreAdmin/${Username}`);
+      } else if (Username === 'Pizza') {
+        navigate(`/PizzaStoreAdmin/${Username}`);
+      } else {
+        setMessage('Invalid Username');
+      }
     } else {
       setMessage(data.status);
     }
-
-  }
+ 
+   }
 
 
 
@@ -44,12 +51,12 @@ const AdminLogin = () => {
 <div>
           <Header />
           <div>
-          <Container className='cardsBody'>
+          <Container>
           <Row className="vh-100 d-flex justify-content-center align-items-center">
           <Col md={8} lg={6} xs={12}>
           <div className="border border-3 border-primary"></div>
           <Card className="shadow">
-          <Card.Body className='cardsBody'>
+          <Card.Body>
           <div className="mb-3 mt-md-4">
           <h2 className="fw-bold mb-2 text-uppercase ">Hi Partner!</h2>
           <p className=" mb-5">Please enter your username and password!</p>

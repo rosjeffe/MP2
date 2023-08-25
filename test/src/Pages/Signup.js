@@ -1,6 +1,6 @@
 import Header from "../Layout/header";
 import React, { useState } from 'react';
-import { Form } from "react-bootstrap";
+import { Form, Button, Container, Row, Col } from "react-bootstrap";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -41,44 +41,52 @@ function Signup() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here
+    
   };
 
   return (
     <div>
       <Header />
-      <h2>Store Registration</h2>
-      <Form onSubmit={handleSubmit}>
-        <div>
-          <label>Store name:</label>
-          <input type="text" value={name} onChange={handleNameChange} />
-        </div>
-        <div>
-          <label>Username:</label>
-          <input type="text" value={user} onChange={handleUserChange} />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input type="password" value={password} onChange={handlePasswordChange} />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input type="email" value={email} onChange={handleEmailChange} />
-        </div>
-        <div>
-          <label>Upload Menu:</label>
-          <input type="file" accept="application/pdf" onChange={handleFileChange} />
-        </div>
-        <div>
-          <label>Opening:</label>
-          <input type="time" value={open} onChange={handleOpeningChange} />
-        </div>
-        <div>
-          <label>Closing:</label>
-          <input type="time" value={close} onChange={handleClosingChange} />
-        </div>
-        <button type="submit">Register</button>
-      </Form>
+      <Container>
+        <h2>Store Registration</h2>
+        <Form onSubmit={handleSubmit}>
+          <Form.Group>
+            <Form.Label>Store Name</Form.Label>
+            <Form.Control type="text" style={{width:'50%'}} value={name} onChange={handleNameChange} placeholder="Enter store name" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Username</Form.Label>
+            <Form.Control type="text"style={{width:'50%'}} value={user} onChange={handleUserChange} placeholder="Enter username" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password"style={{width:'50%'}} value={password} onChange={handlePasswordChange} placeholder="Enter password" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" style={{width:'50%'}} value={email} onChange={handleEmailChange} placeholder="Enter email" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Upload Menu (PDF)</Form.Label>
+            <Form.Control type="file" style={{width:'50%'}} accept="application/pdf" onChange={handleFileChange} />
+          </Form.Group>
+          <Row>
+            <Col>
+              <Form.Group>
+                <Form.Label>Opening Time</Form.Label>
+                <Form.Control type="time"   style={{ width: '25%' }} value={open} onChange={handleOpeningChange} />
+              </Form.Group>
+            </Col>
+            <Col>
+              <Form.Group>
+                <Form.Label>Closing Time</Form.Label>
+                <Form.Control type="time" style={{width:'25%', marginLeft: '-50%'}} value={close} onChange={handleClosingChange} />
+              </Form.Group>
+            </Col>
+          </Row>
+          <Button type="submit">Register</Button>
+        </Form>
+      </Container>
     </div>
   );
 }

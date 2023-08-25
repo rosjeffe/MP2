@@ -248,20 +248,25 @@ margin-top: -10%;
 
   #headerContainer {
   min-width: 100%;
-  background-color: transparent; /* comment out after testing */
+  background-color: rgba(226, 226, 226, 0.795); /* comment out after testing */
 
   }
 
  #headerLogo {
   margin-bottom: 1%;
   margin-top: 1%;
+  ;
  }
 
 
 .navLinks{
   font-size: 80%;
-  background-color: #F39D2F;
+  background-color: #632ff3;
+  width: 100% !important;
+  overflow: auto !important;
+  width: 16.67% !important;
 }
+
 
 #dropDown{
   background-color: #F39D2F;
@@ -271,8 +276,7 @@ margin-top: -10%;
 }
 
 #navbarSupportedContent{
-  border: 10px;
-  border-color: green;
+background-color: #F39D2F;
 }
 
 
@@ -325,6 +329,11 @@ div.contactUsReachUs {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+/* */
+#registration{
+  background-color: red;
+}
+=======
 .ContactUs{
   background-image: url(./Images/contactusbackground.jpg) ;
     background-position: center;
@@ -345,3 +354,4 @@ div.contactUsReachUs {
 .contactSubmit{
   margin-top: 1%;
 };
+

@@ -76,10 +76,10 @@ nav.navbar {
 margin-top: -10%;
 }
 
-.navbar-toggler.collapsed{
+/* .navbar-toggler.collapsed{
   background-color: blue;
   width: 80%;
-}
+} */
 
 .me-auto.navbar-nav{
   background-color: #ffffff;

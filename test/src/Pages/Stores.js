@@ -14,7 +14,7 @@ const Stores = () =>{
       <div>
 <Header></Header>
 <div className="Carding">
-      <div className="row">
+      <div className="row" id='cardRow'>
         <div className="col">
           <div className="row">
             <div className="col-sm-3 mb-3 mb-sm-0">

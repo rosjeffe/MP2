@@ -199,8 +199,19 @@ margin-top: -10%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 
+#cardRow{
+  text-align: center;
+  margin-left: 8%;
+}
+
+#cardRow2{
+  text-align: center;
+  /* margin-left: 1%; */
+}
 
   
 
@@ -258,13 +269,21 @@ margin-top: -10%;
   ;
  }
 
+#footerLogo{
+   max-width: 100%;
+}
 
-.navLinks{
+#navLinks{
   font-size: 80%;
-  background-color: #632ff3;
   width: 100% !important;
-  overflow: auto !important;
-  width: 16.67% !important;
+  background-color: transparent;
+}
+
+.nav-link{
+  block-size: 100%;
+  width: 20% !important;
+  text-align: center;
+  background-color: transparent;
 }
 
 
@@ -275,9 +294,9 @@ margin-top: -10%;
   width: 100%;
 }
 
-#navbarSupportedContent{
-background-color: transparent;
-}
+/* #navbarSupportedContent{
+background-color: red;
+} */
 
 
 /* About us CSS */
@@ -346,12 +365,30 @@ div.contactUsReachUs {
   
 }
 
-.form-label,#exampleFormControlInput1 {
+.form-label {
   color: white !important; 
   width: 250px;
+}
+
+#exampleForm.ControlInput1{
+  stop-color: antiquewhite;
 }
 
 .contactSubmit{
   margin-top: 1%;
 };
+
+#formContainer{
+  margin-right: 0% !important;
+}
+
+
+#footerCard{
+
+  min-width: 100%;
+  /* display: table-row; */
+  width: 100%;
+}
+
+
 

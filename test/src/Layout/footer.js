@@ -3,7 +3,7 @@ import img1 from "../Images/Logo.png";
 
 const Footer =() =>{
     return(
-                <Container className="footer" id="footerCard">  
+                <Container className="w-100 p-3 footer" id="footerCard">  
                       <div className="row">
                       <div className="col">
             
@@ -12,7 +12,7 @@ const Footer =() =>{
                       <div className="row">
                       <div className="col-12 col-md">
                       <div className="container-fluid">
-                      <img className="img-fluid" src={img1} alt="Logo" id='headerLogo'/>
+                      <img className="img-fluid" src={img1} alt="Logo" id='footerLogo'/>
                       </div>
                       </div>
                 <div className="col-3 col-sm">

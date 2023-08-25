@@ -10,6 +10,8 @@ function Signup() {
   const [menuFile, setMenuFile] = useState(null);
   const [open, setOpen] = useState("");
   const [close, setClose] = useState("");
+  const [address, setAddress] = useState("");
+  const [contact, setContact] = useState("");
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -39,6 +41,14 @@ function Signup() {
     setClose(event.target.value);
   };
 
+  const handleAddressChange = (event) => {
+    setClose(event.target.value);
+  };
+
+  const handleContactChange = (event) => {
+    setClose(event.target.value);
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
     
@@ -49,7 +59,7 @@ function Signup() {
       <Header />
       <Container>
         <h2>Store Registration</h2>
-        <Form onSubmit={handleSubmit}>
+        <Form className="regForm" onSubmit={handleSubmit}>
           <Form.Group>
             <Form.Label>Store Name</Form.Label>
             <Form.Control type="text" style={{width:'50%'}} value={name} onChange={handleNameChange} placeholder="Enter store name" />
@@ -68,7 +78,7 @@ function Signup() {
           </Form.Group>
           <Form.Group>
             <Form.Label>Upload Menu (PDF)</Form.Label>
-            <Form.Control type="file" style={{width:'50%'}} accept="application/pdf" onChange={handleFileChange} />
+            <Form.Control type="file" style={{width:'50%'}} accept="application/pdf" value={menuFile} onChange={handleFileChange} />
           </Form.Group>
           <Row>
             <Col>
@@ -84,7 +94,17 @@ function Signup() {
               </Form.Group>
             </Col>
           </Row>
-          <Button type="submit">Register</Button>
+          <Form.Group>
+            <Form.Label>Address</Form.Label>
+            <Form.Control type="text"style={{width:'50%'}} value={address} onChange={handleAddressChange} placeholder="Enter Complete Address" />
+          </Form.Group>
+          <Form.Group>
+            <Form.Label>Contact Number</Form.Label>
+            <Form.Control type="text"style={{width:'50%'}} value={contact} onChange={handleUserChange} placeholder="Enter Contact Number" />
+          </Form.Group>
+          <br/>
+          
+          <Button type="submit" >Register</Button>
         </Form>
       </Container>
     </div>

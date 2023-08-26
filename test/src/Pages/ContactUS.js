@@ -16,7 +16,7 @@ const Contact = () =>{
 
 <div className="ContactUs">
 
-      <Form style={{ maxWidth: '50%' }}>
+      <Form style={{ maxWidth: '50%' }} className=".col-md-3 .ml-md-auto" id="contactForm">
             <Form.Group className="mb-6" controlId="exampleForm.ControlInput1" >
             <Form.Label >Email </Form.Label>
             <Form.Control type="email" placeholder="name@example.com" style={{color:'white'}}/>

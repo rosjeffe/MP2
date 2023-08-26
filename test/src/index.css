@@ -364,6 +364,7 @@ div.contactUsReachUs {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 8%;
 }
 .form-control,.contactSubmit {
   background-color: transparent !important;
@@ -381,7 +382,7 @@ div.contactUsReachUs {
 }
 
 .contactSubmit{
-  margin-top: 1%;
+ margin: 2% 47%;
 };
 
 #formContainer{
@@ -396,5 +397,15 @@ div.contactUsReachUs {
   width: 100%;
 }
 
+
+#contactForm{
+  /* background-color: red; */
+  margin: 0 25%;
+  background-color: #ffffff44;
+  padding: 2%;
+  border-radius: 5%;
+  
+  
+}
 
 

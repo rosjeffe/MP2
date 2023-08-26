@@ -3,10 +3,11 @@ import img1 from "../Images/Logo.png";
 
 const Footer =() =>{
     return(
+                <div id="footerContainer">
                 <Container className="w-100 p-3 footer" id="footerCard">  
                       <div className="row">
                       <div className="col">
-            
+                
     
                 <footer className="container py-5">
                       <div className="row">
@@ -62,8 +63,9 @@ const Footer =() =>{
     
             </div>
         </div>
+        
       </Container>
-  
+        </div>
 
 
 

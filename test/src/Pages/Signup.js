@@ -78,7 +78,7 @@ function Signup() {
           </Form.Group>
           <Form.Group>
             <Form.Label>Upload Menu (PDF)</Form.Label>
-            <Form.Control type="file" style={{width:'50%'}} accept="application/pdf" value={menuFile} onChange={handleFileChange} />
+            <Form.Control type="file" style={{width:'50%'}}  value={menuFile} onChange={handleFileChange} />
           </Form.Group>
           <Row>
             <Col>

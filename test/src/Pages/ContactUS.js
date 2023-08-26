@@ -16,14 +16,14 @@ const Contact = () =>{
 
 <div className="ContactUs">
 
-      <Form style={{ maxWidth: '50%' }} className=".col-md-3 .ml-md-auto" id="contactForm">
+      <Form style={{ maxWidth: '50%' }} id="contactForm">
             <Form.Group className="mb-6" controlId="exampleForm.ControlInput1" >
             <Form.Label >Email </Form.Label>
-            <Form.Control type="email" placeholder="name@example.com" style={{color:'white'}}/>
+            <Form.Control type="email" placeholder="name@example.com" style={{color:'white', margin: 0}}/>
             </Form.Group>
             <Form.Group className="mb-6" controlId="exampleForm.ControlTextarea1"  >
             <Form.Label >Message</Form.Label>
-            <Form.Control as="textarea"  style={{color:'white'}} rows={5} />
+            <Form.Control as="textarea"  style={{color:'white', margin: 0}} rows={5} />
             </Form.Group>
     </Form>
 <div className="contactSubmit">

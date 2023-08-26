@@ -65,11 +65,10 @@ const AdminLogin = () => {
 
 <Form>
           <Form.Group className="mb-3">
-          <Form.Label>Username</Form.Label>
           <InputGroup size="sm">
           <Form.Control
             type="text"
-            placeholder="Username"
+            placeholder="Enter Username"
             value={Username}
             onChange={(e) => setUsername(e.target.value)}
             aria-label="Username"
@@ -79,11 +78,10 @@ const AdminLogin = () => {
 </Form.Group>
 
 <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
           <InputGroup size="sm">
            <Form.Control
             type="password"
-            placeholder="Password"
+            placeholder="Enter Password"
             value={Password}
             onChange={(e) => setPassword(e.target.value)}
             aria-label="Password"
@@ -92,16 +90,7 @@ const AdminLogin = () => {
 </InputGroup>
 </Form.Group>
                     
-  <Form.Group
-              className="mb-3"
-              controlId="formBasicCheckbox"
-              >
-              <p className="small">
-              <a className="text-primary" href="#!">
-              Forgot password?
-              </a>
-              </p> 
-</Form.Group>
+
                       
                       
               <div className="d-grid">
@@ -110,6 +99,17 @@ const AdminLogin = () => {
               </Button>
               <p>{message}</p>
               </div>
+
+              <Form.Group
+              className="mb-3"
+              controlId="formBasicCheckbox"
+              >
+              <p className="small">
+              <a className="text-primary forgot" href="#!">
+              Forgot password?
+              </a>
+              </p> 
+</Form.Group>
 </Form>
               <p className='socSignin'><b>or sign in with</b></p>
               <div className="row">

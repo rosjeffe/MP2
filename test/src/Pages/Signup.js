@@ -94,14 +94,14 @@ function Signup() {
           </Form.Group>
               <Form.Group>
               <div className="formLabel">
-              </div>
                 <Form.Label>Opening Time</Form.Label>
+                </div>
                 <Form.Control type="time"  style={{width:'50%'}}  value={open} onChange={handleOpeningChange} />
               </Form.Group>
               <Form.Group>
               <div className="formLabel">
-              </div>
                 <Form.Label>Closing Time</Form.Label>
+                </div>
                 <Form.Control type="time" style={{width:'50%'}} value={close} onChange={handleClosingChange} />
               </Form.Group>
           

@@ -415,17 +415,33 @@ div.contactUsReachUs {
   padding-bottom: 5%;
 }
 
-.form-control{
-  margin: 0 25% ;
-}
 
 #regHead{
   margin-bottom: 5%;
   padding-top: 5%;
 }
 
-.form-label{
+.formLabel{
   background-color: rgba(49, 15, 15, 0.425);
   border-radius: 10%;
-  margin: 2% 0;
+  margin: 2% 25%;
+  width: 50%;
+}
+
+#exampleForm.ControlInput1{
+  background-color: red;
+}
+
+.form-control{
+  margin: 0 25%;
+  text-align: center;
+}
+
+.d-grid{
+  width: 50%;
+  margin: 0 25%;
+}
+
+.text-primary.forgot{
+  margin: 0 40%;
 }

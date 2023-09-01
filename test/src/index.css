@@ -373,12 +373,17 @@ div.contactUsReachUs {
 }
 
 .form-label {
-  color: white !important; 
+  color: rgb(0, 0, 0) !important; 
+  font-weight: 700;
   width: 250px;
 }
 
 #exampleForm.ControlInput1{
   stop-color: antiquewhite;
+}
+
+#exampleForm.ControlTextarea1{
+  text-align: left;
 }
 
 .contactSubmit{
@@ -401,18 +406,20 @@ div.contactUsReachUs {
 #contactForm{
   /* background-color: red; */
   margin: 0 25%;
-  background-color: #ffffff44;
+  background-color: #ffffff69;
   padding: 2%;
   border-radius: 5%;
 }
 
 #regForm{
   background-color: rgba(82, 0, 0, 0.144);
-  margin: 3%;
+  margin: 2% auto;
   border-radius: 10px;
   text-align: center;
   align-items: center;
-  padding-bottom: 5%;
+  padding-bottom: 1%;
+  width: 30%;
+
 }
 
 
@@ -422,19 +429,14 @@ div.contactUsReachUs {
 }
 
 .formLabel{
-  background-color: rgba(49, 15, 15, 0.425);
-  border-radius: 10%;
-  margin: 2% 25%;
+  margin: 1% 25%;
   width: 50%;
-}
-
-#exampleForm.ControlInput1{
-  background-color: red;
+  fill-opacity: inherit;
 }
 
 .form-control{
   margin: 0 25%;
-  text-align: center;
+  text-align: left;
 }
 
 .d-grid{
@@ -444,4 +446,21 @@ div.contactUsReachUs {
 
 .text-primary.forgot{
   margin: 0 40%;
+}
+
+.regForm{
+  background-color: rgba(44, 52, 53, 0.103);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 25px;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.btn-hover:hover {
+  background-color: #F39D2F !important;
+  border-color: #F39D2F !important;
+  color: #fff; /* Text color when hovering */
+  font-weight: 500;
 }

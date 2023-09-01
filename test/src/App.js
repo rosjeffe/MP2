@@ -12,6 +12,7 @@ import KopikoStore from './Pages/KopikoStore'
 import KopikoStoreAdmin from './Pages/KopikoStoreAdmin'
 import PizzaStoreAdmin from './Pages/PizzaStoreAdmin'
 import RootLayout from './Layout/rootLayout';
+import Confirmation from './Pages/Confirmation'; 
 
 
 function App() {
@@ -29,14 +30,8 @@ function App() {
       <Route path="/KopikoStore/"element = {<KopikoStore></KopikoStore>}></Route>
       <Route path="/PizzaStoreAdmin/:Pizza" element = {<PizzaStoreAdmin></PizzaStoreAdmin>}></Route>
       <Route path="/KopikoStoreAdmin/:Kopiko" element = {<KopikoStoreAdmin></KopikoStoreAdmin>}></Route>
+      <Route path="/Confirmation" element={<Confirmation></Confirmation>}></Route>
     
-      {/* <Route path="/PizzaStoreAdmin/:Angels" element = {<PizzaStoreAdmin></PizzaStoreAdmin>}></Route> */}
-    
-    {/* <Route element ={< AdminLogin/>}>
-  
-    <Route path="/PizzaStoreAdmin/:Pizza" element = {<PizzaStoreAdmin></PizzaStoreAdmin>}></Route>
-    <Route path="/KopikoStoreAdmin/:Kopiko" element = {<KopikoStoreAdmin></KopikoStoreAdmin>}></Route>
-    </Route> */}
     
     </Routes>
 
